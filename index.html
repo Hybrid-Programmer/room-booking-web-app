@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+	 <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Hostel Booking System</title>
+</head>
+<body>
+
+<div id="parent">
+
+	<header>
+		<h2>Regsiter with us</h2>
+	</header>
+
+	<main>
+
+	   <section class="scroll-section">
+			<div id="inner">
+			<div id="modal">
+				<div id="type-div">What is your gender ?</div>
+				<div id="gender-div">
+					<div class="gender-type" id="male-user">Male</div>
+					<div class="gender-type" id="female-user">Female</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!--Male user registration section-->
+
+	   <section class="scroll-section" id="scroll-one">
+		 <form class="register-form" enctype="multipart/form-data" id="signupForm">
+
+		 	<div class="form-header">
+		 		<div class="header-row" id="header-row-text">
+		 			Register as a male
+		 			<div class="close-form" id="close">X</div>
+		 		</div>
+		 	</div>
+
+		 		<div class="form-main">
+		 		<div class="container">
+		 			
+		 			<label for="personality">Membership Status</label>
+			 		<select name="personality" id="personality">
+			 			<option value="Watchman">Watchman</option>
+			 			<option value="Visitor">Visitor</option>
+			 		</select>
+
+			 		<label for="room">Select a room</label>
+			 		<select name="roomNumber" id="roomNumber" required>
+			 		
+			 		</select>
+
+			 		<!--<label for="room">Choose between room 01 to 30</label>
+			 		<input type="number" name="roomNumber" id="roomNumber" required>-->
+
+			 		<label for="profile">Profile</label>
+			 		<input type="file" name="profile" id="profile" required>
+
+			 		<label for="firstname">Firstname</label>
+			 		<input type="text" name="firstname" id="firstname" required>
+
+			 		<label for="middlename">Middlename</label>
+			 		<input type="text" name="middlename" id="middlename" required>
+
+			 		<label for="lastname">Lastname</label>
+			 		<input type="text" name="lastname" id="lastname" required>
+
+			 		<label for="email">Email</label>
+			 		<input type="email" name="email" id="email" required>
+
+			 		<label for="contact">Contact</label>
+			 		<input type="number" name="contact" id="contact" required>
+
+			 		<label for="gender">Gender</label>
+			 		<input type="text" name="gender" value="Male" id="gender" readonly>
+
+			 		<label for="age">Age Bracket</label>
+			 		<select name="age" id="age">
+			 			<option value="18 to 25 years">18 to 25 years</option>
+			 			<option value="26 to 33 years">26 to 33 years</option>
+			 			<option value="34 to 41 years">34 to 41 years</option>
+			 		</select>
+
+			 		<label for="marital-status">Marital Status</label>
+			 		<select name="marital_status" id="marital-status">
+			 			<option value="Single">Single</option>
+			 			<option value="Married">Married</option>
+			 			<option value="Separated">Separated</option>
+			 			<option value="Complicated">Complicated</option>
+			 			<option value="Divorced">Divorced</option>
+			 		</select>
+
+			 		<label for="location">Address</label>
+			 		<input type="text" name="location" id="location" required>
+
+			 	    <label for="parish">Parish</label>
+			 		<input type="text" name="parish" id="parish" required>
+
+			 		<label for="academics" id="academics-label">Academic Status</label>
+			 		<select name="academics" id="academics">
+			 			<option value="Professional">Professional</option>
+			 			<option value="Under-graduate">Under-graduate</option>
+			 			<option value="Graduate">Graduate</option>
+			 			<option value="Post-graduate">Post-graduate</option>
+			 			<option value="Out of school">Out of school</option>
+			 		</select>
+
+			 		<label for="institution" id="institution-label">Enter school here</label>
+			 		<input type="text" name="institution" id="institution" required>
+
+			 		<label for="level" id="level-label">Level</label>
+			 		<select name="level" id="level">
+			 			<option value="100 level">100 level</option>
+			 			<option value="200 level">200 level</option>
+			 			<option value="300 level">300 level</option>
+			 			<option value="400 level">400 level</option>
+			 			<option value="500 level">500 level</option>
+			 		</select>
+
+			 		<label for="qualifications" id="qualifications-label">Qualifications</label>
+			 		<select name="qualifications" id="qualifications" required>
+			 			<option value="OND">OND</option>
+			 			<option value="HND">HND</option>
+			 			<option value="Bachelor's degree">Bachelor's degree</option>
+			 			<option value="Honorary degree">Honorary degree</option>
+			 			<option value="Master's degree">Master's degree</option>
+			 			<option value="Doctorate degree">Doctorate degree</option>
+			 			<option value="Working">Working</option>
+			 		</select>
+
+			 		<input type="submit" value="Submit" id="register">
+
+			 	</div>
+		 	</div>
+
+		 </form>
+	  </section>
+
+	</main>
+	
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+
+</body>
+</html>

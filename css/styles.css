@@ -1,0 +1,235 @@
+		*{
+			box-sizing: border-box;
+		}
+
+		html{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-image: url(https://i.pinimg.com/originals/a2/42/cd/a242cd1cb8f5c6b679b3993d478817f5.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		#parent{
+				width: 90%;
+				height: 90%;
+				background-color: rgba(255, 255, 255, 0.01);
+				backdrop-filter: blur(10px);
+				border-radius: 10px;
+				border: 2px solid white;
+		}
+
+		header{
+			width: 100%;
+			height: 10%;
+			background: transparent;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+
+		main{
+			width: 100%;
+			height: 90%;
+			background: transparent;
+			color: white;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+
+		.scroll-section{
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			color: white;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			transition: 1.5s;
+		}
+
+		#inner{
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			color: white;
+			margin-right: 2%;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding-bottom: 150px;
+		}
+
+		#modal{
+			width: 80%;
+			height: 40%;
+			background: transparent;
+			border-radius: 10px;
+			border: 2px solid gray;
+		}
+
+		#type-div{
+			width: 100%;
+			height: 30%;
+			background: transparent;
+			color: white;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-size: 22px;
+		}
+
+		#gender-div{
+			width: 100%;
+			height: 70%;
+			background: transparent;
+			color: white;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.gender-type{
+			width: 40%;
+			height: 70px;
+			background: transparent;
+			color: white;
+			border-radius: 8px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			margin-right: 3%;
+			font-size: 20px;
+			border: 2px solid gray;
+		}
+
+
+		#scroll-one{
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			color: white;
+			border-radius: 10px;
+			transition: 1s;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1000;
+			opacity: 0;
+		}
+
+		.register-form{
+			width: 100%;
+			height: 100%;
+			padding: 1%;
+			background: white;
+		}
+
+		.form-header{
+			width: 100%;
+			height: 10%;
+			background: darkslategray;
+			color: white;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding-top: 5%s;
+			border-radius: 6px;
+			font-size: 20px;
+		}
+
+		.close-form{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			position: absolute;
+			right: 5%;
+			top: 3%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid red;
+		}
+
+		.form-main{
+			width: 100%;
+			height: 90%;
+			background: white;
+			color: black;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			overflow-x: hidden;
+			overflow-y: visible !important;
+		}
+
+		.container{
+			width: 100%;
+			height: auto;
+			background: white;
+			color: black;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			overflow-x: hidden;
+			overflow-y: visible !important;
+			padding: 5%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		label{
+			text-align: center;
+			margin-bottom: 4%;
+			font-size: 20px;
+		}
+
+		input[type="file"]{
+			padding-top: 2%;	
+			padding-left: 2%;
+			font-size: 18px;
+		}
+
+		input[type="submit"]{
+			margin-top: 5%;
+			background: green;
+			color: white;
+		}
+
+		input, select{
+				width: 100%;
+				height: 45px;
+				border: 2px solid black;
+				border-radius: 8px;
+				margin-bottom: 5%;
+				text-align: center;
+				font-size: 20px;
+		}
