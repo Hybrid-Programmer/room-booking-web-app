@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!--Meta tags for preventing browser caching. Feel free to comment it out before deployment-->
+        <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+        <!--Close meta tag-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"></link>
+        <link rel="stylesheet" href="../css/mains.css"></link>
+    <title>Main Dashboard</title>
+</head>
+<body>
+    <main>
+        <!--Header scetion--->
+
+    <section class="main-section" id="main-section">
+            <div id="top-div">
+               <div class="main-logo-container"><img src="img/logo.jpg" class="admin-logo"></div>
+               <div class="main-title-container">Admin | Home</div>
+                <div id="add-member">+</div>
+           </div>
+
+             <!--Links section--->
+
+        <section class="link-section" id="link-container">
+
+               <div class="link-div">
+                   <div class="main-link" id="members">Users</div>
+               </div>
+
+               <div class="link-div">
+                   <div class="main-link" id="leaders">Admin</div>
+               </div>
+
+               <div class="link-div">
+                   <div class="main-link" id="posts">Rooms</div>
+               </div>
+
+                <div class="link-div">
+                   <div class="main-link" id="media">Bookings</div>
+               </div>
+
+               <div class="link-div">
+                   <div class="main-link" id="notifications">Notifications</div>
+               </div>
+
+        </section>
+   </section>
+
+
+
+    <!--Tabs section-->
+
+    <section class="tabs-section">
+
+         <!--Members tab-->
+
+        <div class="tab-container">
+            <div class="main-tab">
+                 <div id="members-container">
+
+                 <div class="media-type-div">
+                    <div class="type-divs1" id="audio-tab">Male Users</div>
+                    <div class="type-divs1" id="video-tab">Female Users</div>
+                </div>
+
+                <section id="media-section">
+
+                    <!--Audio podcast-->
+
+                    <div class="media-div" id="audio-parent">
+                        <div class="media-inner">
+                             <div class="media-header">
+                                Males
+                             </div>
+                             <div class="media-main" id="males-container">
+
+                             </div>
+                        </div>
+                    </div>
+
+                    <!--Video podcast-->
+
+                    <div class="media-div" id="video-parent">
+                        <div class="media-inner">
+                             <div class="media-header">
+                                Females
+                             </div>
+                             <div class="media-main" id="females-container">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+         </div>
+     </div>
+
+    <!--Section for creating members--> 
+
+         <div class="creation-div" id="creation-div"> 
+
+            <!--User type div-->
+
+            <div class="user-type-div">
+                <div class="choose">
+                     <div id="choose-back"><</div>
+                       <div class="choose-text">Choose user type to create</div>
+                     </div>
+                <div class="click-div">
+                    <div class="user-type-option" id="main-admin">Create admin</div>
+                </div>
+            </div>
+
+            <!--Admins creation form-->
+
+             <form class="new-member-form" enctype="multipart/form-data" id="create-member">
+                <div class="create" id="form-title">
+                    <div id="back"><</div>
+                    <div id="user-title"></div>
+                </div>
+                <label for="photo">
+                    Image
+                </label>
+                <input type="file" name="photo" id="photo" class="contact-input" style="text-transform: lowercase !important;padding-top: 1%;" required>
+
+                <label for="firstname">
+                    Firstname
+                </label>
+                <input type="text" name="firstname" class="contact-input" required>
+
+                 <label for="lastname">
+                    Lastname
+                </label>
+                  <input type="text" name="lastname" class="contact-input" required>
+
+                  <label for="lastname">
+                    Contact
+                </label>
+                  <input type="number" name="contact" class="contact-input" required>
+
+                <label for="email">
+                    Email
+                </label>
+                 <input type="email" name="email" class="contact-input" required>
+
+                <br>
+                 <input type="submit" name="submit" class="submitButton" id="create" value="Create">
+            </form>
+             
+         </div>   
+   </div>
+
+
+
+        <!--Admins tab-->
+
+         <div class="tab-container">
+            <div class="leaders-home">
+
+                <!--Style how each leader will be displayed in this div-->
+
+                <div class="leaders-section" id="leaders-main">
+
+                </div>
+            </div>
+         </div>
+
+       
+  <!--Rooms tab-->
+
+  <div class="tab-container">
+
+     <div class="main-tab">
+         <div id="all-room-container">
+
+         <div class="media-type-div">
+            <div class="type-divs1" id="male-room-tab">Males</div>
+            <div class="type-divs1" id="female-room-tab">Females</div>
+        </div>
+
+             <section class="media-section">
+
+
+                    <div class="media-div" id="male-room-div">
+                        <div class="media-inner">
+                             <div class="media-header">
+                                Males
+                             </div>
+                             <div class="media-main" id="male-room-container">
+
+                                <form class="room-form" id="male-room-form">
+                                    <button name="submit" value="Add room" type="submit" class="room-button" id="add-male-room">Add room</button>
+                                </form>
+
+                             </div>
+                        </div>
+                    </div>
+
+                    <!--Video podcast-->
+
+                    <div class="media-div" id="female-room-div">
+                        <div class="media-inner">
+                             <div class="media-header">
+                                Females
+                             </div>
+                             <div class="media-main" id="female-room-container">
+
+                                 <form class="room-form" id="female-room-form">
+                                    <button  name="submit" value="Add room" type="submit" class="female-room-button" id="add-female-room">Add room</button>
+                                </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+         </div>
+     </div>
+</div>
+  
+
+<!--Bookings tab-->
+
+<div class="tab-container">
+
+     <div class="main-tab">
+         <div id="bookings-container">
+
+         <div class="media-type-div">
+            <div class="type-divs1" id="males-tab">M. Bookings</div>
+            <div class="type-divs1" id="females-tab">F. Bookings</div>
+        </div>
+
+        <section id="media-section1">
+
+            <!--Male bookings-->
+
+            <div class="media-div1" id="male-bookings">
+                <div class="media-inner">
+                     
+                     <div class="media-main" id="male-bookings-container">
+
+                     </div>
+                </div>
+            </div>
+
+            <!--Female bookings-->
+
+            <div class="media-div1" id="female-bookings">
+                <div class="media-inner">
+                     
+                     <div class="media-main" id="female-bookings-container">
+                    
+                   </div>
+               </div>
+              </div>
+            </section>
+         </div>
+     </div>
+</div>
+
+    <!--Notifications tab-->
+
+    <div class="tab-container" id="notification-container"></div>
+
+ </section>
+
+    <!--Modal div-->
+    <div class="third" id="left">
+         <div class="inner" id="inner">
+         <div class="mid1" id="mid"><img src="" class="mid-image" id="mid-image"></div>
+      <div class="info-holder" id="responseHolder"></div>
+      </div>
+  </div>
+  
+</main>
+
+<!--Tested but still being worked on-->
+<script  src="js/jQuery.js"></script>
+<script  src="js/navigation.js"></script>
+<script  src="js/create-main-admin.js"></script>
+<script  src="js/add-rooms.js"></script>
+<script  src="js/delete-files.js"></script>
+<script  src="js/fetch-script.js"></script>
+
+</body>
+</html>
